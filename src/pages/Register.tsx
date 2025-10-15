@@ -52,10 +52,7 @@ const Register = () => {
       return;
     }
 
-    if (!formData.gender || !formData.dateOfBirth) {
-      toast.error("กรุณากรอกข้อมูลให้ครบถ้วน");
-      return;
-    }
+    
 
     // Store user data in localStorage
     const userData = {
@@ -167,9 +164,6 @@ const Register = () => {
               </div>
               
             </div>
-
-            
-
             {/* Health Info */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
